@@ -1,0 +1,22 @@
+.admin-main { max-width: 850px; margin: 0 auto; padding: 55px 5%; min-height: 75vh; }
+.admin-box { padding: 30px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.admin-box h1 { font-size: clamp(35px, 6vw, 55px); letter-spacing: -2px; }
+.admin-box > p { color: var(--muted); }
+.admin-box form { display: flex; flex-direction: column; gap: 12px; margin: 25px 0; }
+.admin-box label { font-size: 13px; font-weight: 700; }
+.admin-box input { width: 100%; border: 1px solid #465042; background: #101510; color: white; border-radius: 7px; padding: 13px; font: inherit; }
+.admin-box input[type=file] { font-size: 12px; }
+.admin-box button { cursor: pointer; align-self: flex-start; }
+.message { color: var(--lime); font-size: 13px; overflow-wrap: anywhere; }
+.admin-box hr { border: 0; border-top: 1px solid var(--line); margin: 28px 0; }
+.admin-box h2 { font-size: 25px; margin-bottom: 20px; }
+.admin-gallery { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; margin-bottom: 25px; }
+.admin-item { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.admin-item img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+.admin-item div { padding: 12px; overflow-wrap: anywhere; }
+.admin-item button { margin-top: 10px; background: transparent; color: #ffaaa0; border: 1px solid #82423c; border-radius: 6px; padding: 7px 10px; }
+[hidden] { display: none !important; }
+@media(max-width:500px) {
+  .admin-box { padding: 20px; }
+  .admin-gallery { grid-template-columns: 1fr; }
+}

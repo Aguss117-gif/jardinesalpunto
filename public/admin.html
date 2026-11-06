@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Administración | JardinesAlpunto</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/admin.css">
+  <script src="/admin.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="/"><span class="brand-icon">✳</span> Jardines<span class="lime">Alpunto</span></a>
+    <a href="/">Ver página ↗</a>
+  </header>
+
+  <main class="admin-main">
+    <section id="loginSection" class="admin-box">
+      <div class="eyebrow">ACCESO RESTRINGIDO</div>
+      <h1>Panel <span class="lime">privado.</span></h1>
+      <p>Ingresá tu contraseña de administrador para gestionar tus trabajos.</p>
+      <form id="loginForm">
+        <label for="password">Contraseña</label>
+        <input id="password" type="password" autocomplete="current-password" required maxlength="200">
+        <button class="button button-lime" type="submit">Iniciar sesión</button>
+        <p id="loginMessage" class="message" role="status"></p>
+      </form>
+    </section>
+
+    <section id="dashboard" class="admin-box" hidden>
+      <div class="eyebrow">GESTIÓN DEL SITIO</div>
+      <h1>Mis <span class="lime">trabajos.</span></h1>
+      <p>Las imágenes publicadas aparecerán en la galería de tu página principal.</p>
+
+      <form id="uploadForm">
+        <label for="title">Nombre del trabajo</label>
+        <input id="title" name="title" maxlength="100" placeholder="Ej. Mantenimiento de jardín">
+
+        <label for="image">Elegir imagen (JPG, PNG o WebP; máximo 5 MB)</label>
+        <input id="image" name="photo" type="file" accept="image/jpeg,image/png,image/webp" required>
+
+        <button class="button button-lime" type="submit">Subir imagen +</button>
+        <p id="uploadMessage" class="message" role="status"></p>
+      </form>
+
+      <hr>
+      <h2>Galería publicada</h2>
+      <div id="adminGallery" class="admin-gallery"></div>
+      <button id="logoutButton" class="button button-outline" type="button">Cerrar sesión</button>
+    </section>
+  </main>
+</body>
+</html>
