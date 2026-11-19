@@ -34,8 +34,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   background: rgba(16,21,16,.96);
   backdrop-filter: blur(14px);
 }
-.brand { display: inline-flex; align-items: center; gap: 9px; font-size: 19px; font-weight: 800; letter-spacing: -.6px; }
-.brand-icon { color: var(--lime); font-size: 29px; }
+.brand { display: inline-flex; align-items: center; flex-shrink: 0; }
+.brand-logo { display: block; height: 48px; width: auto; max-width: 190px; object-fit: contain; }
 .header nav { display: flex; align-items: center; gap: 28px; font-size: 14px; color: #d3d9ce; }
 .header nav a:hover { color: var(--lime); }
 .nav-cta { padding: 10px 17px; border: 1px solid var(--lime); border-radius: 7px; color: var(--lime); }
