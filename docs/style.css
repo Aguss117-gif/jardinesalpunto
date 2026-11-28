@@ -92,6 +92,7 @@ h2 { font-size: clamp(34px, 4.2vw, 53px); line-height: 1.08; letter-spacing: -2p
 
 .about { background: #171e15; display: grid; grid-template-columns: .7fr 2fr; align-items: center; gap: 30px; }
 .about-mark { font-size: 100px; color: var(--lime); text-align: center; }
+.about-mark img { display: inline-block; height: 48px; width: auto; max-width: 190px; object-fit: contain; vertical-align: middle; }
 .about h2 { margin-bottom: 22px; }
 .about p { margin-bottom: 0; }
 
