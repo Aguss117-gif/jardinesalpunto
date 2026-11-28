@@ -90,9 +90,7 @@ h2 { font-size: clamp(34px, 4.2vw, 53px); line-height: 1.08; letter-spacing: -2p
 .gallery-caption { padding: 14px; font-size: 14px; font-weight: 700; }
 .empty-gallery { color: var(--muted); border: 1px dashed #465042; border-radius: 10px; padding: 35px; text-align: center; grid-column: 1/-1; }
 
-.about { background: #171e15; display: grid; grid-template-columns: .7fr 2fr; align-items: center; gap: 30px; }
-.about-mark { font-size: 100px; color: var(--lime); text-align: center; }
-.about-mark img { display: inline-block; height: 48px; width: auto; max-width: 190px; object-fit: contain; vertical-align: middle; }
+.about { background: #171e15; display: grid; grid-template-columns: 1fr; align-items: center; gap: 30px; }
 .about h2 { margin-bottom: 22px; }
 .about p { margin-bottom: 0; }
 
@@ -120,7 +118,6 @@ h2 { font-size: clamp(34px, 4.2vw, 53px); line-height: 1.08; letter-spacing: -2p
   .service-card h3 { font-size: 15px; }
   .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .about { grid-template-columns: 1fr; gap: 12px; }
-  .about-mark { font-size: 65px; text-align: left; }
   .footer { padding: 24px 5%; align-items: flex-start; flex-direction: column; }
 }
 @media (max-width: 390px) {
